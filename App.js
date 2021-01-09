@@ -1,21 +1,7 @@
-import { StatusBar } from 'expo-status-bar';
+
 import React from 'react';
-import { SafeAreaView, StyleSheet, Text, Platform, StatusBar as SB } from 'react-native';
+import Welcome from './screens/welcome';
 
 export default function App() {
-  return (
-    <SafeAreaView style={styles.container}>
-      <StatusBar style="auto" translucent />
-      <Text>Hello World</Text>
-    </SafeAreaView>
-  );
+  return (<Welcome />);
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 40,
-    marginTop: Platform.OS === 'android' ? SB.currentHeight : 0,
-    backgroundColor: '#fff'
-  }
-});
